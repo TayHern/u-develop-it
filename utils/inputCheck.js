@@ -4,7 +4,7 @@
 module.exports = function(obj, ...props) {
   const errors = [];
 
- HEAD
+ 
   props.forEach((prop) => {
 
     // if property is blank or doesn't exist, add to errors array
@@ -18,7 +18,7 @@ module.exports = function(obj, ...props) {
       error: errors.join(' ')
     };
   }
- HEAD
+ 
   
   return null;
 };
