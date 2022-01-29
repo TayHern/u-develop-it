@@ -4,11 +4,9 @@
 module.exports = function(obj, ...props) {
   const errors = [];
 
-<<<<<<< HEAD
+ HEAD
   props.forEach((prop) => {
-=======
-  props.forEach(prop => {
->>>>>>> develop
+
     // if property is blank or doesn't exist, add to errors array
     if (obj[prop] === undefined || obj[prop] === '') {
       errors.push(`No ${prop} specified.`);
@@ -20,12 +18,7 @@ module.exports = function(obj, ...props) {
       error: errors.join(' ')
     };
   }
-<<<<<<< HEAD
+ HEAD
   
   return null;
 };
-=======
-
-  return null;
-};
->>>>>>> develop
